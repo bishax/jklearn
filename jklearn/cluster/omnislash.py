@@ -293,7 +293,7 @@ class Slash:
         # Check whether children exist
         if self.left is None:
             labels.append(self.indexer)
-            return
+            return labels
         else:
             self.left.generate_clusters(labels)
             self.right.generate_clusters(labels)
